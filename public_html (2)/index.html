@@ -1,0 +1,904 @@
+<!DOCTYPE html><!--  Last Published: Fri May 17 2024 21:15:22 GMT+0000 (Coordinated Universal Time)  -->
+<html data-wf-page="6633fb543435def057e72596" data-wf-site="6633fb543435def057e72538" lang="pt">
+<head>
+  <meta charset="utf-8">
+  <title>Parcelaí - Parcela seus boletos no Cartão de Crédito com taxas baixas</title>
+  <meta content="Parcelamento de boletos no cartão de crédito com taxas competitivas. Simplifique suas finanças e pague suas contas de forma conveniente. Experimente agora!" name="description">
+  <meta content="Parcelaí - Parcela seus boletos no Cartão de Crédito com taxas baixas" property="og:title">
+  <meta content="Parcelamento de boletos no cartão de crédito com taxas competitivas. Simplifique suas finanças e pague suas contas de forma conveniente. Experimente agora!" property="og:description">
+  <meta content="Parcelaí - Parcela seus boletos no Cartão de Crédito com taxas baixas" property="twitter:title">
+  <meta content="Parcelamento de boletos no cartão de crédito com taxas competitivas. Simplifique suas finanças e pague suas contas de forma conveniente. Experimente agora!" property="twitter:description">
+  <meta property="og:type" content="website">
+  <meta content="summary_large_image" name="twitter:card">
+  <meta content="width=device-width, initial-scale=1" name="viewport">
+  <link href="css/normalize.css" rel="stylesheet" type="text/css">
+  <link href="css/webflow.css" rel="stylesheet" type="text/css">
+  <link href="css/boleto-leve.webflow.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin="anonymous">
+  <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js" type="text/javascript"></script>
+  <script type="text/javascript">WebFont.load({  google: {    families: ["Gothic A1:300,regular,500,600,700,800"]  }});</script>
+  <script type="text/javascript">!function(o,c){var n=c.documentElement,t=" w-mod-";n.className+=t+"js",("ontouchstart"in o||o.DocumentTouch&&c instanceof DocumentTouch)&&(n.className+=t+"touch")}(window,document);</script>
+  <link href="images/favicon.png" rel="shortcut icon" type="image/x-icon">
+  <link href="images/webclip.png" rel="apple-touch-icon">
+</head>
+<body class="body">
+        <style>
+        body {
+            user-select: none;
+            -webkit-user-select: none; /* Para navegadores WebKit (Chrome, Safari) */
+            -moz-user-select: none; /* Para Firefox */
+            -ms-user-select: none; /* Para Internet Explorer/Edge */
+        }
+        
+        .section.wide.purple { 
+            align-items: center;
+            background-image: linear-gradient(40deg, rgb(229, 221, 200), rgb(1, 148, 154));
+            padding-bottom: 20vh;
+        
+        }
+        
+         .footer-list {
+           display: flex;
+           justify-content: space-between;
+           flex-wrap: wrap;
+           padding: 20px;
+          }
+
+        .footer-link {
+        color: #6B6B6B; /* Cor padrão para os links */
+        text-decoration: none;
+    }
+    
+    .table-container table, .table-container td {
+    width: 100px;
+    border: none;
+    height: 30px;
+}
+
+    .field-label {
+      margin-top: 25px;
+      text-align: left;
+    }
+    
+    .formnamecpf {
+        margin-top: 15px;
+        
+    }
+
+    .footer-developed {
+        width: 100%;
+        text-align: center;
+        margin-top: 10px; /* Espaçamento superior para separar do resto dos links */
+    }
+
+    #etapa3 .button-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px; /* Adiciona uma margem superior entre os botões */
+  margin-bottom: 20px; /* Adiciona uma margem inferior entre os botões */
+}
+
+#etapa3 .left-button {
+  margin-right: 30px; /* Adiciona uma margem à direita apenas para o botão "Voltar" */
+  margin-top: 30px;
+}
+
+#etapa3 .right-button {
+  margin-left: 30px; /* Adiciona uma margem à esquerda apenas para o botão "Confirmar Pedido" */
+  margin-top: 30px;
+}
+
+    .button1 {
+      padding: 10px 20px;
+      border: 2px solid black;
+      border-radius: 8px;
+      color: white;
+      background-color: #156082;
+      margin-top: 25px;
+    }
+
+    .button-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px; /* Adiciona a margem de 20px acima dos botões */
+  }
+
+  .button-container button {
+    padding: 10px 20px;
+    
+  }
+  
+  p {
+    color: black;
+    margin-bottom: 150px;
+    margin-left: 20px;
+    margin-right: 20px;
+    font-size: 16px;
+    line-height: 30px;
+  }
+
+  .left-button {
+    align-self: flex-start;
+    border: 2px solid black;
+    border-radius: 8px;
+    color: black;
+    background-color: #F0F0F0;
+  }
+
+  .titles-nav-bar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  margin-top: 20px; /* Ajuste conforme necessário */
+}
+
+.image-7,
+.image-8,
+.image-9 {
+  /* Ajuste conforme necessário */
+  width: 500px;
+  height: 50px;
+  margin-bottom: -37px; /* Ajustando a margem inferior para 37px para manter a distância máxima de 3px */
+  display: inline-block;
+}
+
+.image-7 {
+  width: 600px; 
+  
+}
+.image-8 {
+  width:600px;
+}
+
+.image-9 {
+  width: 600px;
+}
+
+.titles-nav-bar > div {
+  text-align: center;
+  margin-top: -10px; /* Ajustando a margem superior para aproximar das imagens */
+}
+
+.text-block-3,
+.text-block-4,
+.text-block-5 {
+  font-size: 16px; /* Ajuste conforme necessário */
+  font-weight: 500;
+}
+
+
+  .right-button {
+    align-self: flex-end;
+    border: 2px solid black;
+    border-radius: 8px;
+    color: white;
+    background-color: #156082;
+  }
+    .table_cell {
+      border: 2px solid black;
+      font-size: 12px;
+      cursor: pointer;
+    }
+    .selected {
+      background-color: #156082;
+    }
+    .hidden {
+      display: none;
+    }
+    .div-block-17 {
+      margin-top: 45px;
+    }
+    .div-block-17, .div-block-18, .div-block-19, .div-block-16 {
+      margin-bottom: 30px;
+      font-size: 10px;
+      
+    }
+    .result-table {
+      margin-top: 20px;
+    }
+
+    .error-message {
+    display: none;
+    color: red;
+}
+
+
+    .table_row_margin {
+     margin-top: 10px;
+    }
+
+    .form-group {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+  }
+
+  .form-group label {
+    margin-right: 20px;
+  }
+
+  .form-group .table-container {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .table-container table {
+    border: 1px solid #ccc;
+    padding: 5px;
+  }
+
+  .button-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+
+  .button-container button {
+    padding: 10px 20px;
+  }
+
+  .left-button {
+    align-self: flex-start;
+  }
+
+  .right-button {
+    align-self: flex-end;
+  }
+
+    .footer-developed a {
+        background: linear-gradient(to right, #ff8c00, #ff00ff); /* Gradiente para o último link */
+        -webkit-background-clip: text; /* Clip de texto para suportar gradientes em navegadores da WebKit */
+        -webkit-text-fill-color: transparent; /* Cor transparente do texto para suportar gradientes em navegadores da WebKit */
+        display: inline-block;
+    }
+    </style>
+  <div class="hero">
+    <div data-collapse="medium" data-animation="default" data-duration="400" data-doc-height="1" data-easing="ease" data-easing2="ease" role="banner" class="nav w-nav">
+      <div class="nav-inner">
+        <div class="nav-logo-wrap">
+          <a href="#" class="brand w-nav-brand"><img src="images/Parcelai_logo_hrz.png" width="250" alt="" height="Auto" sizes="250px" srcset="images/Parcelai_logo_hrz-p-500.png 500w, images/Parcelai_logo_hrz-p-800.png 800w, images/Parcelai_logo_hrz-p-1080.png 1080w, images/Parcelai_logo_hrz-p-1600.png 1600w, images/Parcelai_logo_hrz-p-2000.png 2000w, images/Parcelai_logo_hrz-p-2600.png 2600w, images/Parcelai_logo_hrz.png 3000w" class="image-5"></a>
+        </div>
+        <div class="nav-menu-wrap">
+          <nav role="navigation" class="nav-menu-2 w-nav-menu">
+            <a href="#about" class="nav-link w-nav-link">Sobre nos</a>
+            <a href="#features" class="nav-link w-nav-link">Dúvidas</a>
+            <a href="#how-to-use" class="nav-link w-nav-link">Consulta</a>
+            <a href="#download" class="nav-link w-nav-link">Simulação</a>
+          </nav>
+          <div class="menu-button w-nav-button">
+            <div class="menu-icon w-icon-nav-menu"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="section center"><img src="https://uploads-ssl.webflow.com/5af49de0dbb1e3637f2d8886/5b1437cbda3c5c3369fe4460_arrow.svg" alt="" class="arrow">
+    <div data-w-id="6b220cb1-4b9c-7fb0-75b9-53ff4a6c35a2" style="-webkit-transform:translate3d(0, 30PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 30PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 30PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 30PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);opacity:0" class="hero-content">
+      <h1 class="heading-3">Parcele seus boletos em até 18x</h1>
+      <h3 class="hero-subhead">Use seu cartão de crédito para pagar suas contas com taxas a partir de 2,89% a.m.</h3>
+      <a href="#download" class="button w-button">Simule Já</a>
+    </div><img class="hero-image" src="images/Hero3.png" width="Auto" height="Auto" alt="" style="-webkit-transform:translate3d(0, 60PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 60PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 60PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 60PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);opacity:0" sizes="(max-width: 479px) 90vw, (max-width: 991px) 70vw, 100vw" data-w-id="77e69727-c455-8e07-0990-833a661c94ea" srcset="images/Hero3-p-500.png 500w, images/Hero3-p-800.png 800w, images/Hero3-p-1080.png 1080w, images/Hero3.png 1500w">
+  </div>
+  <div id="about" class="section wide img">
+    <div data-w-id="b126983d-9126-fc06-c81d-1318685e2add" style="-webkit-transform:translate3d(0, 40PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 40PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 40PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 40PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);opacity:0" class="wrap">
+      <div class="title">Use o Limte do seu cartão de crédito para pagar suas contas e boletos</div>
+      <h2>Mantenha suas contas em dia e ganhe tempo sem se preocupar com negativações ou cancelamento de serviços. Com Parcelaí, você deixa tira o peso das contas das suas costas.</h2>
+    </div>
+    <div class="wrapper"><img src="images/Quantas-Parcelas-1x-de-15100-2x-de.png" alt="" sizes="90vw" srcset="images/Quantas-Parcelas-1x-de-15100-2x-de-p-500.png 500w, images/Quantas-Parcelas-1x-de-15100-2x-de-p-800.png 800w, images/Quantas-Parcelas-1x-de-15100-2x-de-p-1080.png 1080w, images/Quantas-Parcelas-1x-de-15100-2x-de-p-1600.png 1600w, images/Quantas-Parcelas-1x-de-15100-2x-de.png 2000w"></div>
+  </div>
+  <div class="section">
+    <div id="features" class="feature-wrap">
+      <div data-w-id="4593c4b7-56e8-060a-be57-648b0e08fc65" style="-webkit-transform:translate3d(0, 40PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 40PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 40PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 40PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);opacity:0" class="feature-content">
+        <div class="title">Contas Mensais</div>
+        <h2 class="black">Contas de Luz, Gas, Telefone, Àgua</h2>
+        <p>Com o parcelamento da sua conta de energia, você tem a flexibilidade de ajustar seus pagamentos de acordo com seu orçamento, evitando surpresas desagradáveis e mantendo suas finanças sob controle.</p>
+      </div>
+      <div class="feature-image"><img src="images/Utilities.png" width="341" alt="" sizes="(max-width: 479px) 90vw, (max-width: 991px) 40vw, 20vw" srcset="images/Utilities-p-500.png 500w, images/Utilities-p-800.png 800w, images/Utilities-p-1080.png 1080w, images/Utilities-p-1600.png 1600w, images/Utilities.png 2000w" class="image-2"></div>
+    </div>
+    <div class="feature-wrap reverse">
+      <div data-w-id="cafe0045-d304-79d9-8f68-af3adaed06e9" style="-webkit-transform:translate3d(0, 40PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 40PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 40PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 40PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);opacity:0" class="feature-content">
+        <div class="title">Casa e Educação</div>
+        <h2 class="black-text">Condomínio, Escola, Faculdade</h2>
+        <p>Parcelar suas contas de escola e condomínio oferece a conveniência de distribuir seus gastos ao longo do tempo, ajudando você a manter suas finanças organizadas e evitar sobrecargas em seu orçamento mensal. </p>
+      </div>
+      <div class="feature-image"><img src="images/oo-1.png" width="386" alt="" sizes="(max-width: 479px) 90vw, (max-width: 991px) 40vw, 20vw" srcset="images/oo-1-p-500.png 500w, images/oo-1.png 731w" class="image-2"></div>
+    </div>
+    <div class="feature-wrap">
+      <div data-w-id="88086931-0bbf-a2f5-1fc3-58d79ba19b7e" style="-webkit-transform:translate3d(0, 40PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 40PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 40PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 40PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);opacity:0" class="feature-content">
+        <div class="title">Carro e Veículos</div>
+        <h2 class="black-text">Tributos, IPVA, Multas, Licenciamento</h2>
+        <p>Parcelar suas contas de licenciamento, multas e IPVA proporciona uma maneira prática de gerenciar seus custos automotivos, permitindo que você distribua os pagamentos ao longo do ano e evite impactos financeiros repentinos.</p>
+      </div>
+      <div class="feature-image"><img src="images/Utilities2.png" width="341" alt="" sizes="(max-width: 479px) 90vw, (max-width: 991px) 40vw, 20vw" srcset="images/Utilities2-p-500.png 500w, images/Utilities2-p-800.png 800w, images/Utilities2-p-1080.png 1080w, images/Utilities2-p-1600.png 1600w, images/Utilities2.png 2000w" class="image-2"></div>
+    </div>
+    <div class="feature-wrap icons">
+      <div class="feature-content icons"><img src="images/Icon4.png" width="100" alt="" height="100" sizes="100px" srcset="images/Icon4-p-500.png 500w, images/Icon4.png 800w" class="feature-icon">
+        <h4 class="black-text">Mais Tempo</h4>
+        <p>Parcele sua conta em até 18x e só comece a pagar na data de vencimento da sua próxma fatura do cartão.</p>
+      </div>
+      <div class="feature-content icons"><img src="images/Icon1.png" width="100" alt="" height="100" sizes="100px" srcset="images/Icon1-p-500.png 500w, images/Icon1.png 800w" class="feature-icon">
+        <h4 class="black-text">Juros Baixos</h4>
+        <p>Juros muito mais baixos que a média do mercado iniciando em 2,79% ao mês comparado com taxas acima de 15% para outros empréstimos sem garantia.</p>
+      </div>
+      <div class="feature-content icons"><img src="images/Icon2.png" alt="" width="100" height="100" sizes="100px" srcset="images/Icon2-p-500.png 500w, images/Icon2.png 800w" class="feature-icon">
+        <h4 class="black-text">Flexibilidade</h4>
+        <p>Ganhe milhas e cashback do seu cartão enquanto aumenta seu histórico e melhora seu score de crédito.</p>
+      </div>
+    </div>
+    <div id="how-to-use" class="feature-wrap">
+      <div data-w-id="0585a81c-ee42-8b56-bc8e-bd582946320a" style="-webkit-transform:translate3d(0, 40PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 40PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 40PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 40PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);opacity:0" class="feature-content">
+        <div class="title">Passo a passo</div>
+        <h2 class="black-text">Como Funciona?</h2>
+        <p>1) <strong>Inclusão dos boletos</strong> : Pelo menos 3 dias antes do vencimento.<br>‍<br>2) <strong>Simulação de parcelamento </strong>: Escolha entre 2 e 18 parcelas.<br>‍<br>3) <strong>Pagamento </strong>: Pague com seu cartão de crédito.<br>‍<br>4) <strong>Análise </strong>: Nossa equipe vai verificar seus dados e documentos.<br>‍<br>5) <strong>Aprovação </strong>: Pagamos sua conta no dia do vencimento.<br><br>6) <strong>Liberdade!</strong> Aproveita sua conta mais leve e mais flexibilidade financeira.</p>
+      </div>
+      <div class="feature-image"><img src="images/oo-cartao.png" width="519" alt="" sizes="(max-width: 479px) 90vw, (max-width: 991px) 40vw, 25vw" srcset="images/oo-cartao-p-500.png 500w, images/oo-cartao.png 731w" class="image-2"></div>
+    </div>
+    <div data-delay="4000" data-animation="slide" class="quote-slider w-slider" data-autoplay="false" data-easing="ease" style="-webkit-transform:translate3d(0, 40PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 40PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 40PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 40PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);opacity:0" data-hide-arrows="false" data-disable-swipe="false" data-w-id="321c18fb-db93-7e62-3afc-4dab2862f5d4" data-autoplay-limit="0" data-nav-spacing="8" data-duration="500" data-infinite="true">
+      <div class="w-slider-mask">
+        <div class="w-slide">
+          <div class="quote-wrap"><img src="https://uploads-ssl.webflow.com/5af49de0dbb1e3637f2d8886/5b14481dda3c5c4b9bfe5147_quotation.svg" width="58" alt="" class="quote-icon">
+            <h3>Com a Boleto Leve, consegui pagar minhas contas mensais com prazo extendido. Isso me salvou quando tive que pagar outras despesas inesperadas no mês! Os juros são bem mais baixos que do banco.</h3>
+            <div class="quote-attribution">
+              <p>Pedro P.</p>
+              <div class="quote-dash"></div>
+              <p><strong>Cliente Verificado Abril 2024</strong></p>
+            </div>
+          </div>
+        </div>
+        <div class="w-slide">
+          <div class="quote-wrap"><img src="https://uploads-ssl.webflow.com/5af49de0dbb1e3637f2d8886/5b14481dda3c5c4b9bfe5147_quotation.svg" width="58" alt="" class="quote-icon">
+            <h3>Que maravilha! Juros bemmm mais baixos e ainda ganhei cashback do meu cartão! Recomendo!</h3>
+            <div class="quote-attribution">
+              <p>Josue O. </p>
+              <div class="quote-dash"></div>
+              <p><strong>Cliente Verificado Março 2024</strong></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="left-arrow w-slider-arrow-left">
+        <div class="slider-arrow w-icon-slider-left"></div>
+      </div>
+      <div class="right-arrow w-slider-arrow-right">
+        <div class="slider-arrow w-icon-slider-right"></div>
+      </div>
+      <div class="slide-nav w-slider-nav w-slider-nav-invert w-round"></div>
+    </div>
+    <div data-w-id="23f92271-dba9-fb12-00d3-758ef4d10fb2" style="-webkit-transform:translate3d(0, 40PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 40PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 40PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 40PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);opacity:0" class="feature-wrap logos"><img src="images/Logo-Bar.png" alt="" sizes="(max-width: 991px) 90vw, (max-width: 3885px) 70vw, 2720px" srcset="images/Logo-Bar-p-500.png 500w, images/Logo-Bar-p-800.png 800w, images/Logo-Bar-p-1080.png 1080w, images/Logo-Bar-p-1600.png 1600w, images/Logo-Bar-p-2000.png 2000w, images/Logo-Bar-p-2600.png 2600w, images/Logo-Bar.png 2720w"></div>
+  </div>
+  <div id="download" class="section wide purple">
+    <div data-w-id="376e2a1f-ec70-0dab-11ea-b1863101e37b" style="-webkit-transform:translate3d(0, 40PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 40PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) skew(0, 0);-ms-transform:translate3d(0, 40PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) skew(0, 0);transform:translate3d(0, 40PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) skew(0, 0);opacity:0" class="wrap"> <h2 id="Simulacao" data-w-id="376e2a1f-ec70-0dab-11ea-b1863101e37c" data-wf-id="[&quot;376e2a1f-ec70-0dab-11ea-b1863101e37c&quot;]" class="heading-4">Quero simular!</h2>
+      <!-- Etapa 1: Dados -->
+      <div class="form-section form-dados">
+        <div class="w-layout-blockcontainer phases w-container">
+          <div class="w-form">
+            <form id="form-dados">
+              <div  id="etapa1" class="etapa">
+                  <div class="text-block-6"><strong class="bold-text">Dados do boleto que deseja parcelar e o cartão que pretende usar</strong></div>
+                 <label for="boleto" class="field-label">Tipo de boleto</label>
+                <select id="boleto" name="boleto" required="" class="tipo-boleto w-select">
+                <option value="">Selecione...</option>
+                <option value="Água">Água</option>
+                <option value="Luz">Luz</option>
+                <option value="Gás">Gás</option>
+                <option value="Telefone Fixo">Telefone Fixo</option>
+                <option value="Telefone Celular">Telefone Celular</option>
+                <option value="Televisão a Cabo">Televisão a Cabo</option>
+                <option value="Escola">Escola</option>
+                <option value="Condimínio">Condomínio</option>
+                <option value="IPTU">IPTU</option>
+                <option value="IPVA">IPVA</option>
+                <option value="Tributos Federais">Tributos Federais</option>
+                <option value="Tributos Estaduais">Tributos Estaduais</option>
+                <option value="Tributos Municipais">Tributos Municipais</option>
+                <option value="Multas de Trânsito">Multas de Trânsito</option>
+                <option value="Licenciamento">Licenciamento</option>
+                <option value="Outros">Outros</option>
+               </select>
+               <span id="error-boleto" class="error-message">Por favor, selecione o tipo de boleto.</span>
+
+               <label for="value" class="field-label">Valor</label>
+               <input class="valor-boleto w-input" maxlength="256" name="value" placeholder="R$ 0,00" type="text" id="value" required>
+               <span id="error-value" class="error-message">Por favor, insira um valor válido.</span>
+               <label for="quantas-parcelas" class="field-label">Quantas Parcelas</label>
+               <select id="quantas-parcelas" name="quantas-parcelas" required="" class="parcelas w-select">
+                <option value="">Selecione...</option>
+                <option value="2x">2</option>
+                <option value="3x">3</option>
+                <option value="4x">4</option>
+                <option value="5x">5</option>
+                <option value="6x">6</option>
+                <option value="7x">7</option>
+                <option value="8x">8</option>
+                <option value="9x">9</option>
+                <option value="10x">10</option>
+                <option value="11x">11</option>
+                <option value="12x">12</option>
+                <option value="18x">18</option>
+               </select>
+               <span id="error-parcelas" class="error-message">Por favor, selecione o número de parcelas.</span>
+               <label for="fee" class="field-label">Banco emissor do seu cartão</label>
+               <select id="fee" name="fee" required="" class="banco w-select">
+                <option value="">Selecione...</option>
+                  <option value="3.49">Banco Carrefour</option>
+                <option value="3.49">Banco da Amazônia</option>
+                <option value="3.49">Banco Digi+</option>
+                <option value="3.49">Banco do Brasil</option>
+                <option value="3.49">Banco do Nordeste</option>
+                <option value="3.49">Banco Inter</option>
+                <option value="3.49">Banco Mercantil do Brasil</option>
+                <option value="3.49">Banco Original</option>
+                <option value="3.49">Banco PAN</option>
+                <option value="3.49">Banco Renner</option>
+                <option value="3.49">Banco Safra</option>
+                <option value="3.49">Banco XP</option>
+                <option value="3.49">Banese</option>
+                <option value="3.49">Banestes</option>
+                <option value="3.49">Banpará</option>
+                <option value="3.49">Banrisul</option>
+                <option value="3.49">BigCard</option>
+                <option value="3.49">Bitz</option>
+                <option value="3.49">BMG</option>
+                <option value="3.49">BMS</option>
+                <option value="3.49">Bradescard</option>
+                <option value="3.49">Bradesco</option>
+                <option value="3.49">BRB</option>
+                <option value="3.49">Brydge</option>
+                <option value="3.49">BS CASH</option>
+                <option value="3.49">BS2</option>
+                <option value="3.49">BTG Pactual</option>
+                <option value="3.49">Bulla</option>
+                <option value="3.49">BV Financeira S.A.</option>
+                <option value="3.49">C6 Bank</option>
+                <option value="3.49">Caixa</option>
+                <option value="3.49">Capitual</option>
+                <option value="3.49">Caruana</option>
+                <option value="3.49">Casa do Crédito</option>
+                <option value="3.49">CashWay</option>
+                <option value="3.49">CCB Banco Múltiplo</option>
+                <option value="3.49">Celcoin</option>
+                <option value="3.49">Claro</option>
+                <option value="3.49">Confidence</option>
+                <option value="3.49">Credicard</option>
+                <option value="3.49">Crefisa</option>
+                <option value="3.49">Digimais</option>
+                <option value="3.49">Digio</option>
+                <option value="3.49">DOCK</option>
+                <option value="3.49">Eucard</option>
+                <option value="3.49">FastCash</option>
+                <option value="3.49">FitBank</option>
+                <option value="3.49">i2020</option>
+                <option value="3.49">Idea Maker</option>
+                <option value="3.49">Itaú</option>
+                <option value="3.49">Iti</option>
+                <option value="3.49">Mercado Pago</option>
+                <option value="3.49">Midway</option>
+                <option value="3.49">MoneyCloud</option>
+                <option value="3.49">MoneyPag</option>
+                <option value="3.49">Neon</option>
+                <option value="3.49">Nubank</option>
+                <option value="3.49">Onibank</option>
+                <option value="3.49">PAG</option>
+                <option value="3.49">PagSeguro</option>
+                <option value="3.49">PagueVeloz</option>
+                <option value="3.49">Pefisa</option>
+                <option value="3.49">Personal Card</option>
+                <option value="3.49">PinkBank</option>
+                <option value="3.49">Policard</option>
+                <option value="3.49">Porto Seguro</option>
+                <option value="3.49">Rede Compras</option>
+                <option value="3.49">RoadPass</option>
+                <option value="3.49">Santander</option>
+                <option value="3.49">Sicoob</option>
+                <option value="3.49">Sicredi</option>
+                <option value="3.49">SmartPay</option>
+                <option value="3.49">Somapay</option>
+                <option value="3.49">Stone</option>
+                <option value="3.49">Super Digital</option>
+                <option value="3.49">Tribanco</option>
+                <option value="3.49">Up Brasil</option>
+                <option value="3.49">UzziPay</option>
+                <option value="3.49">Vólus</option>
+                <option value="3.49">Willbank</option>
+               </select>
+               <span id="error-fee" class="error-message">Por favor, selecione o banco emissor do seu cartão.</span>
+               <label for="bandeira" class="field-label">Bandeira do cartão</label>
+               <select id="bandeira" name="bandeira" required="" class="bandeira w-select">
+                <option value="">Selecione...</option>
+                <option value="Mastercard">Mastercard</option>
+                <option value="Visa">Visa</option>
+                <option value="Elo">Elo</option>
+                <option value="Hipercard">American Express</option>
+                <option value="Hipercard">Hipercard</option>
+               </select>
+               <span id="error-bandeira" class="error-message">Por favor, selecione a bandeira do cartão.</span>
+               <button id="calculate" class="button1"> <strong>Próximo Passo</strong></button>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div id="etapa2" class="hidden">
+          <div class="text-block-6"><strong class="bold-text">Dados do boleto que deseja parcelar e o cartão que pretende usar</strong></div>
+          <div id="resultados" class="result-table"></div>
+          <div class="div-block-17">
+            <table class="table_component">
+              <tbody class="table_body">
+                <tr class="table_row">
+                  <td class="table_cell"></td>
+                  <td class="table_cell"></td>
+                  <td class="table_cell"></td>
+                </tr>
+                <tr class="table_row">
+                  <td class="table_cell"></td>
+                  <td class="table_cell"></td>
+                  <td class="table_cell"></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="div-block-18">
+            <table class="table_component">
+              <tbody class="table_body">
+                <tr class="table_row">
+                  <td class="table_cell"></td>
+                  <td class="table_cell"></td>
+                  <td class="table_cell"></td>
+                </tr>
+                <tr class="table_row">
+                  <td class="table_cell"></td>
+                  <td class="table_cell"></td>
+                  <td class="table_cell"></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="div-block-19">
+            <table class="table_component">
+              <tbody class="table_body">
+                <tr class="table_row">
+                  <td class="table_cell"></td>
+                  <td class="table_cell"></td>
+                  <td class="table_cell"></td>
+                </tr>
+                <tr class="table_row">
+                  <td class="table_cell"></td>
+                  <td class="table_cell"></td>
+                  <td class="table_cell"></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="div-block-16">
+            <table class="table_component">
+              <tbody class="table_body">
+                <tr class="table_row">
+                  <td class="table_cell"></td>
+                  <td class="table_cell"></td>
+                  <td class="table_cell"></td>
+                </tr>
+                <tr class="table_row">
+                  <td class="table_cell"></td>
+                  <td class="table_cell"></td>
+                  <td class="table_cell"></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="button-container">
+            <button id="voltar1" class="left-button"><strong>Voltar</strong></button>
+            <button id="proximo2" class="right-button"><strong> Próximo Passo</strong></button>
+          </div>
+        </div>
+      
+        
+<div id="etapa3" class="hidden">
+  <div id="resumo">
+    <div class="form-group">
+      <label for="parcelas">Parcelas:</label>
+      <div class="table-container">
+        <table>
+          <tr>
+            <td id="resumo-parcelas"></td>
+          </tr>
+        </table>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label for="valor-parcela">Valor por Parcela:</label>
+      <div class="table-container">
+        <table>
+          <tr>
+            <td id="resumo-valor-parcela"></td>
+          </tr>
+        </table>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label for="tarifa">Tarifa:</label>
+      <div class="table-container">
+        <table>
+          <tr>
+            <td id="resumo-tarifa">0</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label for="juros-mensais">Juros Mensais:</label>
+      <div class="table-container">
+        <table>
+          <tr>
+            <td id="resumo-juros-mensais"></td>
+          </tr>
+        </table>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label for="juros-cet">Juros CET:</label>
+      <div class="table-container">
+        <table>
+          <tr>
+            <td id="resumo-juros-cet"></td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <form id="form-resumo" class="formnamecpf">
+    <label for="nome">Nome</label>
+    <input type="text" id="nome" required>
+    <label for="cpf">CPF</label>
+    <input type="text" id="cpf" required>
+  </form>
+
+  <div class="button-container">
+    <button type="button" id="voltar2" class="left-button"><strong>Voltar</strong</button>
+    <button type="button" id="confirmar" class="right-button"><strong>Confirmar Pedido</strong</button>
+  </div>
+  
+  
+      </div>
+      
+        <div id="etapa4" class="hidden">
+          <p><strong>Recebemos seu pedido!<br><br>
+            Nossa equipe vai analisar os dados e retornará com instruções de 
+            pagamento em caso de confirmação.<br><br>
+            Prazo de resposta: 48hs</strong> </p>
+        </div>
+        
+      </div>
+
+    </div>
+  </div>
+</main>
+  
+<script>
+   document.addEventListener("DOMContentLoaded", function() {
+    const valueInput = document.getElementById("value");
+
+    // Função para formatar o valor como moeda brasileira
+    function formatCurrency(value) {
+      const number = parseFloat(value.replace(/[^\d,-]/g, '').replace(',', '.'));
+      if (isNaN(number)) {
+        return '';
+      }
+      return number.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' });
+    }
+
+    // Adiciona um ouvinte de evento de input ao input
+    valueInput.addEventListener("input", function(event) {
+      let value = event.target.value.replace(/\D/g, "");
+
+      // Se o valor estiver vazio, define como zero
+      if (value === "") {
+        value = "0";
+      }
+
+      // Formata o valor como moeda brasileira
+      const formattedValue = new Intl.NumberFormat("pt-BR", {
+        style: "currency",
+        currency: "BRL"
+      }).format(value / 100);
+
+      // Atualiza o valor do input
+      event.target.value = formattedValue;
+    });
+
+    // Para permitir a edição do valor monetário corretamente
+    valueInput.addEventListener("focus", function(event) {
+      const value = event.target.value.replace(/\D/g, "");
+      event.target.value = (value / 100).toFixed(2).replace(".", ",");
+    });
+
+    valueInput.addEventListener("blur", function(event) {
+      let value = event.target.value.replace(/\D/g, "");
+      if (value === "") {
+        value = "0";
+      }
+      const formattedValue = new Intl.NumberFormat("pt-BR", {
+        style: "currency",
+        currency: "BRL"
+      }).format(value / 100);
+      event.target.value = formattedValue;
+    });
+  });
+
+
+// Função para calcular juros mensais
+function calcularJurosMensais(fee) {
+  return (Math.pow(1 + fee, 1 / 12) - 1);
+}
+
+document.getElementById('calculate').addEventListener('click', function() {
+  const value = parseFloat(document.getElementById('value').value);
+  const fee = parseFloat(document.getElementById('fee').value) / 100;
+
+  const resultadosContainer = document.getElementById('resultados');
+  const divs = document.querySelectorAll('[class^="div-block"]');
+
+  const meses = [2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 18];
+  let index = 0;
+
+  divs.forEach((div) => {
+    const table = div.querySelector('.table_component');
+    const rows = table.querySelectorAll('.table_row');
+    const parcelsRow = rows[0];
+    const totalsRow = rows[1];
+    const parcelCells = parcelsRow.querySelectorAll('.table_cell');
+    const totalCells = totalsRow.querySelectorAll('.table_cell');
+
+    for (let cellIndex = 0; cellIndex < 3; cellIndex++) {
+      if (index < meses.length) {
+        const month = meses[index];
+        const total = value * Math.pow(1 + fee, month);
+        const parcela = total / month;
+
+        // Calcular juros mensais e CET
+        const jurosMensais = calcularJurosMensais(fee);
+        const cet = Math.pow(1 + jurosMensais, 12) - 1;
+
+        parcelCells[cellIndex].textContent = `${month}x de R$ ${parcela.toFixed(2).replace('.', ',')}`;
+        parcelCells[cellIndex].dataset.month = month;
+        parcelCells[cellIndex].dataset.total = total.toFixed(2).replace('.', ',');
+        parcelCells[cellIndex].dataset.parcela = parcela.toFixed(2).replace('.', ',');
+        parcelCells[cellIndex].dataset.jurosMensais = jurosMensais.toFixed(4); // Ajustado para exibir 4 casas decimais
+        parcelCells[cellIndex].dataset.cet = cet.toFixed(4); // Ajustado para exibir 4 casas decimais
+
+        totalCells[cellIndex].textContent = `R$ ${total.toFixed(2).replace('.', ',')} (CET ${(cet * 100).toFixed(2)}% ao mês)`;
+
+        parcelCells[cellIndex].addEventListener('click', function() {
+          document.querySelectorAll('.table_cell').forEach(cell => cell.classList.remove('selected'));
+          parcelCells[cellIndex].classList.add('selected');
+        });
+
+        index++;
+      } else {
+        parcelCells[cellIndex].textContent = '';
+        totalCells[cellIndex].textContent = '';
+      }
+    }
+  });
+
+  document.getElementById('etapa1').classList.add('hidden');
+  document.getElementById('etapa2').classList.remove('hidden');
+});
+
+document.getElementById('voltar1').addEventListener('click', function() {
+  document.getElementById('etapa2').classList.add('hidden');
+  document.getElementById('etapa1').classList.remove('hidden');
+});
+
+document.getElementById('proximo2').addEventListener('click', function() {
+  const selected = document.querySelector('.table_cell.selected');
+  if (!selected) {
+    alert('Por favor, selecione um período.');
+    return;
+  }
+
+  const month = selected.dataset.month;
+  const total = selected.dataset.total;
+  const parcela = selected.dataset.parcela;
+  const jurosMensais = selected.dataset.jurosMensais;
+  const cet = selected.dataset.cet;
+
+  document.getElementById('resumo-parcelas').textContent = month;
+  document.getElementById('resumo-valor-parcela').textContent = `R$ ${parcela}`;
+  document.getElementById('resumo-juros-mensais').textContent = `${(parseFloat(jurosMensais) * 100).toFixed(2)}%`;
+  document.getElementById('resumo-juros-cet').textContent = `${(parseFloat(cet) * 100).toFixed(2)}%`;
+
+  document.getElementById('etapa2').classList.add('hidden');
+  document.getElementById('etapa3').classList.remove('hidden');
+});
+
+document.getElementById('voltar2').addEventListener('click', function() {
+  document.getElementById('etapa3').classList.add('hidden');
+  document.getElementById('etapa2').classList.remove('hidden');
+});
+
+document.getElementById('confirmar').addEventListener('click', function() {
+  const nome = document.getElementById('nome').value;
+  const cpf = document.getElementById('cpf').value;
+
+  if (!nome || !cpf) {
+    alert('Por favor, preencha todos os campos.');
+    return;
+  }
+
+   // Objeto com os dados a serem enviados para o servidor
+  const dados = {
+    nome: nome,
+    cpf: cpf
+  };
+
+  // Requisição para o servidor para inserir os dados no banco de dados
+  fetch('pedidos.php', {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json'
+    },
+    body: JSON.stringify(dados)
+  })
+  .then(response => {
+    if (response.ok) {
+      // Se a inserção for bem-sucedida, exibe uma mensagem para o usuário
+      alert('Pedido confirmado! Aguarde nossa equipe entrar em contato.');
+      // Esconde a etapa 3 e mostra a etapa 4
+      document.getElementById('etapa3').classList.add('hidden');
+      document.getElementById('etapa4').classList.remove('hidden');
+    } else {
+      // Se houver algum erro, exibe uma mensagem de erro
+      alert('Erro ao confirmar pedido. Por favor, tente novamente mais tarde.');
+    }
+  })
+  .catch(error => {
+    console.error('Erro ao enviar requisição:', error);
+    alert('Erro ao confirmar pedido. Por favor, tente novamente mais tarde.');
+  });
+});
+  </script>
+  
+
+
+
+  <div class="section wide">
+    <div data-w-id="8cf47482-19f1-1f52-25ba-910a60bc91de" style="-webkit-transform:translate3d(0, 40PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 40PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 40PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 40PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);opacity:0" class="wrap">
+      <h2>Newsletter</h2>
+      <p>Quero receber atualizações</p>
+      <div class="form-block w-form">
+        <form id="email-form" name="email-form" data-name="Email Form" method="get" class="form-2" data-wf-page-id="6633fb543435def057e72596" data-wf-element-id="538f9bd6-8ca5-4ea7-b7d3-6a7d798b371d"><input class="input w-input" maxlength="256" name="email-2" data-name="Email 2" placeholder="Informe seu email" type="text" id="email-2" required=""><input type="submit" data-wait="Please wait..." class="button form-button w-button" value="Assinar"></form>
+        <div class="w-form-done">
+          <div>Thank you! Your submission has been received!</div>
+        </div>
+        <div class="w-form-fail">
+          <div>Oops! Something went wrong while submitting the form.</div>
+        </div>
+      </div>
+    </div>
+    <div class="wrapper"></div>
+  </div>
+  <div class="footer">
+    <div class="wrap"><img src="images/Parcelai_logo_vrt.png" width="136" alt="" sizes="136px" srcset="images/Parcelai_logo_vrt-p-500.png 500w, images/Parcelai_logo_vrt-p-800.png 800w, images/Parcelai_logo_vrt.png 1000w" class="image-6">
+      <div class="footer-list">
+    <a href="#" class="footer-link">Email</a>
+    <a href="#" class="footer-link">Instagram</a>
+    <a href="#" class="footer-link">Facebook</a>
+    <a href="#" class="footer-link">Twitter</a>
+    <div class="footer-developed">
+        <a href="https://www.instagram.com/yasysoftware/">Desenvolvido por Yasy Software &copy; 2024</a>
+    </div>
+</div>
+    </div>
+  </div>
+  <script src="https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.5.1.min.dc5e7f18c8.js?site=6633fb543435def057e72538" type="text/javascript" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+  <script src="js/webflow.js" type="text/javascript"></script>
+</body>
+</html>
